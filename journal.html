@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./journal.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" href="./blogstyle.css">  
+    <style>
+
+html, body{
+padding:0px;
+margin:0px;
+font-family: arial, helvetica, sans-serif;
+background-color: white;
+color: black;
+text-align: center;
+
+}
+.container {
+  width: 100%;
+margin: 0px;
+padding:0px
+}
+
+
+.topbar{
+    font-family: verdana;
+    size: 300px;
+    display: block;
+    color: white;
+    border: 0px solid black;
+    background-color:mediumpurple;
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity:0.5;
+    width: 100%;
+    margin-top: 0px;
+    text-align: left;
+    height:50px;
+}
+
+/* .bgphoto {
+    background-image: url("https://k45.kn3.net/taringa/1/1/5/7/4/3/18/oskitar_1/B9A.jpg?2520");
+    background-size:cover;
+    position: relative;
+    width:100%;
+    height:600px;
+    padding:0px;
+    margin:0px;
+    text-align: center;
+}
+*/
+.entry{
+    border: 1px solid paleturquoise;
+    background-color:palegoldenrod;
+    display:inline-block;
+    text-align: center;
+    width:70%;
+    height:70%;
+    margin-top: 150px;
+
+}
+
+.entrytemplate{
+    border: 1px solid black;
+    background-color: white;
+    display:inline-block;
+    text-align: center;
+    width:40%;
+    height:40%;
+    margin:50px;
+    padding:7%;
+
+}
+
+.camera, .textpost{
+  margin:10px;
+
+}
+
+a:hover img.camera, a:hover img.textpost{
+  margin-top:-4px;
+  zoom: 110%;
+  
+}
+
+input#date, input#title{
+  position:relative;
+  top:-3px;
+}
+
+</style>
+
+</head>
+<body>
+  <div class = "container">
+
+    <div class="bgphoto">
+
+
+    <div class= "topbar">
+    <a href="./entrypage.html">
+    <img src="./img/logo.png" style="padding-left:10px;float:left;margin:1px" class = "maintitle">
+    </a>
+    <h2 style="text-align:right;padding-right:10px;margin:10px;" class="maintitle">Hey, <strong></strong></h2>
+    </div>
+  
+    <div class="entry"> 
+
+      <div class=“col-md-12”>
+
+      <h2 class= "subtitle">Create a new entry</h2>
+
+  <form> Title:
+    <input id = "title" type="text">
+         Date:
+    <input id = "date" type="date"><br>
+  
+      
+    <textarea id = "content" name="text" cols=72 rows=10></textarea><br>
+  
+         By:
+    <input id = "author" type="text" name="author"></div><br>
+    <!--<p>this will be your login name</p>-->
+<button id = "enterbutn" type="button">Post</button>
+</form>
+</div>
+</div>
+
+<!--<div class="postopt">
+      <h2>Hello, <strong></strong> What would you like to post today?</h2>
+      
+      <a href="some.txt">
+        <img class ="textpost" src="img/text.png" style="width:42px;height:42px;border:0;">
+      </a>
+
+     <a href="some.txt">
+       <img class ="camera" src="img/camera.png"style="width:42px;height:42px;border:0;">
+     </a>
+
+</div>-->
+
+<div id="journalpage">
+   
+</div>
+
+
+   </div>
+</div>
+<script>
+$( "strong" ).append( localStorage.author );
+</script>
+
+</body>
+</html>

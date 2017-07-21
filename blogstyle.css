@@ -1,0 +1,77 @@
+html, body{
+padding:0px;
+margin:0px;
+font-family: arial, helvetica, sans-serif;
+background-color: white;
+color: black;
+text-align: center;
+
+}
+.container {
+  width: 100%;
+margin: 0px;
+padding:0px
+}
+
+
+.topbar{
+    font-family: verdana;
+    size: 300px;
+    display: block;
+    color: white;
+    border: 0px solid black;
+    background-color:mediumpurple;
+    position: fixed;
+    top: 0%;
+    z-index: 100;
+    opacity:0.5;
+    width: 100%;
+    margin-top: 0px;
+    text-align: left;
+    height:50px;
+}
+
+ /*.bgphoto {
+    background-image: url("https://k45.kn3https://static.pexels.com/photos/430207/pexels-photo-430207.jpegnet/taringa/1/1/5/7/4/3/18/oskitar_1/B9A.jpg?2520");
+    background-size:cover;
+    position: relative;
+    width:100%;
+    height:600px;
+    padding:0px;
+    margin:0px;
+    text-align: center;
+}*/
+
+.entry{
+    border: 1px solid paleturquoise;
+    background-color:palegoldenrod;
+    display:inline-block;
+    text-align: center;
+    width:70%;
+    height:70%;
+    margin-top: 150px;
+
+}
+
+.entrytemplate{
+    border: 1px solid black;
+    background-color: white;
+    display:inline-block;
+    text-align: center;
+    width:40%;
+    height:40%;
+    margin:50px;
+    padding:7%;
+
+}
+
+.camera, .textpost{
+  margin:10px;
+
+}
+
+a:hover img.camera, a:hover img.textpost{
+  margin-top:-4px;
+  zoom: 110%;
+  
+}
